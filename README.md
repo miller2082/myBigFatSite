@@ -132,7 +132,30 @@ $ git push -u origin master
 
 That is it! We are up on Github!
 
-Now it is time to set up mySQL 
+
+
+*** TO BE COMPLETED IN PRODUCTION ENVIRONMENT :: PYTHONANYWHERE ***
+CREATE AND SET UP A MySQL Database
+
+
+
+a. Installation of MySQL and dependencies
+
+$ sudo apt-get install python-dev mysql-server libmysqlclient-dev
+
+$ easy_install -U distribute
+
+$ sudo mysql_install_db		# for database structure
+
+$ sudo mysql_secure_installation	# Security checks
+
+b. Install MySQL into project virtualenv
+
+$ pip install MySQL-python
+
+MySQL-python in /home/jmm/virtualenvs/mybigfatsite_venv/lib/python2.7/site-packages
+
+*** The development SQLite will be used until the project is moved to Pythonanywhere ***
 
 
 
