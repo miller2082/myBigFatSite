@@ -124,6 +124,15 @@ Untracked files:
 	myBigFatSite/
 	requirements.txt
 
+$ git add .				Adds all project directories and files except what is in .gitignore
+
+$ git remote add origin https://github.com/miller2082/mybigfatsite.git
+
+$ git push -u origin master
+
+That is it! We are up on Github!
+
+Now it is time to set up mySQL 
 
 
 
