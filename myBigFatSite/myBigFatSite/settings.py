@@ -25,12 +25,15 @@ SECRET_KEY = '+x=j)2sw8kw&3^_=+g(o%#+rf+$t%u6wb2#ml2vqv0(=lc*k8v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = [] 
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com'] # So this will be used after deployment
 
 
 # Application definition
 
 INSTALLED_APPS = [
+	'pronunciation_training.apps.PronunciationTrainingConfig',
+	'dev_blog.apps.DevBlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -118,3 +121,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')	

@@ -2,6 +2,8 @@ README
 
 My Big Fat Site 
 
+Place of residence: ~/projects/mybigfatsite
+
 My Big Fat Site is a Django web application which will have at least two apps (plugins), a page entitled Pronunciation Training which will house detailed instruction on an English pronunciation training, and my developer blog.
 
 Below will be the exact steps taken to build the application. 
@@ -73,10 +75,11 @@ Make an 'app' (aka plugin) which will live beside manage.py
 App (plugin) name: pronunciation_training		# I'll give app (plugin) names under_score
 
 $ python manage.py startapp pronunciation_training
+$ python manage.py startapp dev_blog
 
 ~/mybigfatsite/myBigFatSite$$ ls
 
-db.sqlite3  manage.py  myBigFatSite  pronunciation_training
+db.sqlite3  dev_blog manage.py  myBigFatSite  pronunciation_training
 
 7. a. Create a .gitignore file (which is invisible)
 
@@ -131,6 +134,48 @@ $ git remote add origin https://github.com/miller2082/mybigfatsite.git
 $ git push -u origin master
 
 That is it! We are up on Github!
+
+01/24/2017
+
+ADJUSTMENTS TO myBigFatSite/settings.py
+
+added:
+
+TIME_ZONE = 'JP', However, since this did not mesh up with language it threw an error.
+
+STATIC_URL = '/static/'	# This was already there
+Added:
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+ALLOWED_HOSTS was empty. 
+
+For deployment to Pythonanywhere it is changed to:
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+
+Added a second app, dev_blog, but when I run the runserver command only the 
+html response for the first app, pronunciation_training, runs on the browser.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

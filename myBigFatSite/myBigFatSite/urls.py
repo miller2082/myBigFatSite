@@ -13,9 +13,32 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import include, url
 from django.contrib import admin
+from dev_blog import views
+from pronunciation_training import views
 
 urlpatterns = [
+	url(r'^$', views.index, name='index'),
+	url(r'^dev_blog/', include('dev_blog.urls')),
+	url(r'^pronunciation_training/', include('pronunciation_training.urls')),
     url(r'^admin/', admin.site.urls),
 ]
+
+
+
+"""
+FROM MYSITE DEMO urls.py:
+
+from django.conf.urls import include, url
+from django.contrib import admin
+from polls import views
+
+
+urlpatterns = [
+	url(r'^$', views.index, name='index'),
+	url(r'^polls/', include('polls.urls')),
+	url(r'^admin/', admin.site.urls),
+]
+
+"""
