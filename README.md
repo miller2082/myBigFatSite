@@ -156,6 +156,23 @@ Added a second app, dev_blog, but when I run the runserver command only the
 html response for the first app, pronunciation_training, runs on the browser.
 
 
+1/29/2017
+
+
+Began work on Django Models for dev_blog from Django Girls tutorial.
+
+1/31/2017 
+
+Created superuser for project.
+Set up static html for pronunciation_training app
+
+Problem working on now:
+
+How to add an app and make that app deploy as homepage, 
+so that other apps can be represented as buttons on homepage.
+
+
+
 
 
 
