@@ -172,6 +172,14 @@ How to add an app and make that app deploy as homepage,
 so that other apps can be represented as buttons on homepage.
 
 
+02/01/2017
+
+Added home app
+Made homepage point to 'home' http response
+Put appropriate http template in pronunciation_training views.py
+Added the app mybigfathomepage to the project which will serve as homepage for entire project.
+The homepages of other apps will live in /dev_blog and /pronunciation_training 
+
 
 
 
