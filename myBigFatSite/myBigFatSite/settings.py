@@ -32,8 +32,9 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com'] # So this will be used afte
 # Application definition
 
 INSTALLED_APPS = [
-	'pronunciation_training.apps.PronunciationTrainingConfig',
+	'mybigfathomepage.apps.MybigfathomepageConfig',
 	'dev_blog.apps.DevBlogConfig',
+	'pronunciation_training.apps.PronunciationTrainingConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -121,4 +122,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+# This is from goodcode.io
+STATIC_ROOT = 'staticfiles'
+
+"""
+The following is from Djangogirls
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')	
+"""

@@ -15,16 +15,36 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from dev_blog import views
-from pronunciation_training import views
+from mybigfathomepage import views
+from dev_blog import urls	#views
+from dev_blog import urls	#views
+#from dev_blog import views
+#from pronunciation_training import views
+# For homeview
 
-urlpatterns = [
-	url(r'^$', views.index, name='index'),
-	url(r'^dev_blog/', include('dev_blog.urls')),
+
+# Idea for Homepage :: then add to Templates/index.html
+from django.views.generic import TemplateView
+
+
+"""
+From static sites:
+urlpatterns = patterns('',
 	url(r'^pronunciation_training/', include('pronunciation_training.urls')),
-    url(r'^admin/', admin.site.urls),
+	url(r'^dev_blog/', include('dev_blog.urls')),
+	url(r'^admin/', admin.site.urls),
+)
+"""
+urlpatterns = [
+	# Set up a homapage view rather that pron_tran http
+	#url(r'^$', HomeView.as_view(), name='home'),
+	#url(r'^$', views.index, name='blog'),
+	#url(r'^$', views.index, name='index'),
+	url(r'^$', views.index, name='index'),	# Should point to home_app
+	url(r'^dev_blog/', include('dev_blog.urls')),	# Should point to /blog html
+	url(r'^pronunciation_training/', include('pronunciation_training.urls')), #pron_trn html
+    url(r'^admin/', admin.site.urls),	#points to /admin
 ]
-
 
 
 """
