@@ -12,6 +12,6 @@ def index(request):
 """
 
 def index(request):
-	posts = BlogPost.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+	posts = BlogPost.objects.filter(published_date__lte=timezone.now()).order_by('published_date').reverse()
 	return render(request, 'dev_blog/post_list.html', {'posts': posts})
 
