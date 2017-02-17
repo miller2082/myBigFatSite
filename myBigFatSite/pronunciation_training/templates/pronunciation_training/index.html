@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="{% static 'css/pronunciation_training.css' %}">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="英語, 発音, 英語 発音, 英語の発音, 英語 R の発音をマスターしよう!, 英語の筋トレ！ , hatsuon, hatsuon training, english, english pronunciation, english pronunciation training, english pronunciation muscle training, 英会話, अंग्रेजी उच्चारणचारण">
+
+        <title>English Pronunciation Muscle Training</title>
+    <link rel="stylesheet" href="style.css">
+            <style type="text/css">
+                * {
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    -ms-box-sizing: border-box;
+                    box-sizing: border-box;
+                }
+                .row {
+                    margin: 20px;
+                    display: flex;
+
+                }
+                .col-1 {
+                    width: 8.33%;
+                }
+                .col-2 {
+                    width: 16.66%;
+                }
+                .col-3 {
+                    width: 25%;
+                }
+                .col-4 {
+                    width: 33.33%;
+                }
+                .col-5 {
+                    width: 41.66%;
+                }
+                .col-6 {
+                    width: 50%;
+                }
+                .col-7 {
+                    width: 58.33%;
+                }
+                .col-8 {
+                    width: 66.66%;
+                }
+                .col-9 {
+                    width: 75%;
+                }
+                .col-10 {
+                    width: 83.33%;
+                }
+                .col-11 {
+                    width: 91.66%;
+                }
+                .col-12 {
+                    width: 100%;
+                }
+                 .injected-text {
+                        padding: 20px;
+                        text-align: center;
+                        }
+                    body {
+                        font: Verdana, Helvetica, sans-serif;
+                        display: block;
+                    }
+                    #wrapper {
+                        max-width: 100%;
+                        margin-right: auto;
+                        margin-left: auto;
+                        border-right: 2px solid #000000;
+                        border-left: 2px solid #000000;
+                        background-color: #E6E6FA;
+                        text-align: center;
+                        }
+                #header {
+                        padding: 10px;
+                        overflow: auto;
+                        margin-top: 5px;
+                        margin-right: 5px;
+                        margin-bottom: 5px;
+                        margin-left: 5px;
+                        color: white;
+                        background-color: blue;
+                        border: 5px solid red;
+                }
+        #nav {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #home {
+                padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #abc {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        #howto {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #rules {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #r,w {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #l,th {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #f,v {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #syl {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #con {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #store {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+                display: flex;
+        }
+        #mrs {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+
+        }
+        #movies {
+        max-width: 100%;
+        margin: 10px;
+        }
+            </style>
+</head>
+<body>
+<div id="wrapper">
+<div class="container-fluid">
+    <div id="header" style="font-size: 22px">
+        <h1 id="title">English Pronunciation Muscle Training</h1>
+    </div>
+    <div class="grid">
+    <div class="well" id="nav">
+            <button class="btn btn-default"><a href="#home">Home</a></button>
+            <button class="btn btn-default"><a href="#abc">Building Blocks</a></button>
+            <button class="btn btn-default"><a href="#howto">How to Practice</a></button>
+            <button class="btn btn-default"><a href="#rules">Rules for Pronunciation Training</a></button>
+            <button class="btn btn-default"><a href="#r,w">Rules for R & W</a></button>
+            <button class="btn btn-default"><a href="#l,th">Rules for L & Th</a></button>
+            <button class="btn btn-default"><a href="#f,v">Rules for F & V</a></button>
+            <button class="btn btn-default"><a href="#syl">Syllables in Action</a></button>
+            <button class="btn btn-default"><a href="#con">Conclusion</a></button>
+            <button class="btn btn-default"><a href="#store">"Mastering the R Sound" Audio Lesson</a></button>
+            <button class="btn btn-default"><a href="#mrs">About "Mastering the R Sound"</a></button>
+    </div>
+            <div class="well" id="home">
+                <h2>Home</h2>
+                <p>This program was designed to enable ESL students to encorporate correct pronunciation of difficult English sounds into their motor (muscle) memory.</p>
+                <p>Since pronunciation is only an issue for advance ESL students, the lesson is given entirely in English. However, a brief description is given below in Japanese.</p>
+            </div>
+            <div class="well" id="abc">
+                <h2>Building Blocks</h2>
+
+                    <h4>Syllables</h4>
+                    <h4>Vowels: a, e, i, o, u</h4>
+                    <h4>Consonants</h4>
+
+            </div>
+            <div class="well" id="howto">
+                <h2>How To Practice English Pronunciation</h2>
+                <p>English pronunciation training is similar to playing a wind instrument such as a flute.</p>
+                <p>We exhale and vocalize while holding a certain face position, then we change face positions to the following sound.</p>
+            </div>
+        <div class="well">
+            <div id="rules">
+                <h2>Rules for Pronunciation Training</h2>
+
+                    <h4>Syllable Identification</h4>
+                    <h4>Face Position</h4>
+                    <h4>Sound (Vocalize)</h4>
+                    <h4>Release to a Vowel</h4>
+            </div>
+            <div>
+                <div class="injected-text"><input type="text" style="text-align: center" placeholder="Video coming soon!"></div>
+                <!-- <iframe width="420" height="315" src="video link here">video coming soon</iframe> -->
+            </div>
+        </div>
+        <div class="well" id="r,w">
+            <div>
+                <h2>Rules for Pronouncing R & W</h2>
+                    <h4>Face Position: Pucker</h4>
+                    <h4>No Tongue!</h4>
+                    <h4>Consonant Before R---Face Position R</h4>
+                    <h4>Two Consonants Before R---Face Position R</h4>
+            </div>
+            <div>
+                <div class="injected-text"><input type="text" style="text-align: center" placeholder="Video coming soon!"></div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iCt-1n8RKsc" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="well" id="l,th">
+            <div>
+                <h2>Rules for Pronouncing L & TH</h2>
+                    <h4>Face Position: Fake Smile</h4>
+                    <h4>Jaw Open</h4>
+                    <h4>Tongue SOFTLY Touches Teeth</h4>
+                    <h4>L: Vocalize Only</h4>
+                    <h4>Th: Exhale Air Between Teeth</h4>
+                    <h4>Th: Vibration and SOFT 'Feather' Touch</h4>
+            </div>
+            <div id="movies">
+                <div class="injected-text"><input type="text" style="text-align: center" placeholder="Video coming soon!"></div>
+                <!-- <iframe width="420" height="315" src="video link here">video coming soon</iframe> -->
+            </div>
+        </div>
+        <div class="well" id="f,v">
+            <div>
+                <h2>Rules for Pronouncing F & V</h2>
+                    <h4>Face Position: 'Bite' Bottom Lip<h4>
+                    <h4>F: Create Air Pressure<h4>
+                    <h4>F Is Explosive, Like a Popped Baloon<h4>
+                    <h4>V: SOFTLY touch Bottom Lip to Top Teeth<h4>
+                    <h4>V: Never Touch Top Lip to Bottom Lip<h4>
+
+            </div>
+            <div id="movies">
+                <div class="injected-text"><input type="text" style="text-align: center" placeholder="Video coming soon!"></div>
+                <!-- <iframe width="420" height="315" src="video link here">video coming soon</iframe> -->
+            </div>
+        </div>
+        <div class="well" id="syl">
+            <div >
+                <h2>Syllables in Action</h2>
+                    <h4>Sound Out Syllables</h4>
+                    <h4>Each Syllable Gets One Beat</h4>
+                    <h4>1/2 Beat Between Syllables: Time for Face Position Change</h4>
+                    <h4>Find the Rhythm of the Words and Language</h4>
+                    <h4>Speak with the Rhythm of the Language</h4>
+                    <h4>Listen with the Rhythm of the Language</h4>
+                    <h4>Identifying Syllables Makes Pronunciation Easy!</h4>
+
+            </div>
+            <div id="movies">
+                <div class="injected-text"><input type="text" style="text-align: center" placeholder="Video coming soon!"></div>
+                <!-- <iframe width="420" height="315" src="video link here">video coming soon</iframe> -->
+            </div>
+        </div>
+            <div class="well" id="con">
+            <h2>Conclusion</h2>
+                <h4>Memorize the Rules</h4>
+                <h4>Practice the Physical Movements with the Drills</h4>
+                <h4>Identify syllables</h4>
+                <h4>Find the Rhythm of the Language with Syllables</h4>
+            </div>
+        <div class="well" id="store">
+            <div>
+                <h2>"Mastering the R Sound" Audio Lesson</h2>
+            </div>
+
+            <div>
+                <p><img src="WebReady/audioImage.png" width="149" height="149" longdesc="WebReady/audioImage.png" alt="Audio Image"></p>
+            </div>
+
+            <div id="images-only">
+                <p>
+                    <a href="https://itunes.apple.com/album/id1047034588?ls=1&amp;app=itunes" target="_blank" title="Click to buy on iTunes">
+                    <img src="WebReady/100px_itunes.jpg" width="100" height="41" alt="iTunes">
+                    </a>
+                </p>
+                <p>
+                    <a href="https://play.google.com/store/music/album/James_M_Miller_英語_R_の発音をマスターしよう?id=Bcqk5s5mxmtpmvdnyzqnshdma4q&amp;hl=en" target="_blank" title="Click to buy on Google Play">
+                    <img src="WebReady/1000px-Google_Play_logo.png" width="100" height="23" alt="google">
+                    </a>
+                </p>
+                <p>
+                    <a href="http://www.amazon.co.jp/英語-の発音をマスターしよう-James-M-Miller/dp/B016AS5A0U/ref=sr_1_1?ie=UTF8&amp;qid=1444530694&amp;sr=8-1&amp;keywords=英語 R の発音をマスターしよう！" target="_blank" title="Click to buy on Amazon">
+                    <img src="WebReady/100px_amazon_jp.png" width="100" height="26" alt="amazon">
+                    </a>
+                </p>
+            </div>
+        </div>
+            <div class="well" id="mrs">
+                <div>
+                    <h2>About "Mastering the R sound" Audio Lesson</h2>
+                    <p><strong>This lesson is entirely in English.</strong></p>
+                    <h4><strong> 英語の筋トレ！</strong><strong> and “Mastering the R Sound”</strong><strong> </strong><strong>英語</strong><strong> R </strong><strong>の発音をマスターしよう</strong><strong>!</strong><strong> </strong></h4>
+                    <h3><strong>Key Points</strong></h3>
+                    <p>TOEFLやTOEICのスコアを伸ばしたいですか？ </p>
+                    <p>英語の発音に自信がないから、英語が通じないと思ったことはありますか？ </p>
+                    <p>英語の発音は苦手だと感じたことはありますか？ </p>
+                    <p>“R”の発音は難しいですか？ </p>
+
+                    <p>上記の質問に一つでもあてはまるようなら、発音のトレーニングをやってみましょう。 <br>
+                    この英語の筋トレ！ドリルは、英語の発音が苦手と思っている人にむけて考案したプログラムです。 <br>
+                    私があなたのコーチになって、英語の発音トレーニングを行います。 <br>
+                    簡単なルールを覚えれば、難しい発音もできるようになります。 <br>
+                    “R”の発音を正しく発音するためのコツを教えます。 <br>
+                    英語を正しく発音するための　”筋トレ“　を伝授します。 <br>
+                    母音、A, E, I, O, Uの正しい発音の仕方を教えます。 <br>
+                    英語の筋トレ！さぁ、はじめましょう。 <br>
+                </div>
+            </div>
+        <footer>
+        <div class="row" id="footer">
+            <div class="col-4">A public service to the ESL students of the world.</div>
+            <div id="copyright" class="col-4">Copyright 2015 :hatsuontraining.com:: All rights reserved</div>
+            <div class="col-4">Contact: <a href="mailto:jmillerconcom@gmail.com">James M. Miller</a>.</div>
+        </div>
+        </footer>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+
+                * {
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    -ms-box-sizing: border-box;
+                    box-sizing: border-box;
+                }
+                .row {
+                    margin: 20px;
+                    display: flex;
+
+                }
+                .col-1 {
+                    width: 8.33%;
+                }
+                .col-2 {
+                    width: 16.66%;
+                }
+                .col-3 {
+                    width: 25%;
+                }
+                .col-4 {
+                    width: 33.33%;
+                }
+                .col-5 {
+                    width: 41.66%;
+                }
+                .col-6 {
+                    width: 50%;
+                }
+                .col-7 {
+                    width: 58.33%;
+                }
+                .col-8 {
+                    width: 66.66%;
+                }
+                .col-9 {
+                    width: 75%;
+                }
+                .col-10 {
+                    width: 83.33%;
+                }
+                .col-11 {
+                    width: 91.66%;
+                }
+                .col-12 {
+                    width: 100%;
+                }
+                 .injected-text {
+                        padding: 20px;
+                        text-align: center;
+                        }
+                    body {
+                        font: Verdana, Helvetica, sans-serif;
+                        display: block;
+                    }
+                    #wrapper {
+                        max-width: 100%;
+                        margin-right: auto;
+                        margin-left: auto;
+                        border-right: 2px solid #000000;
+                        border-left: 2px solid #000000;
+                        background-color: #E6E6FA;
+                        text-align: center;
+                        }
+                #header {
+                        padding: 10px;
+                        overflow: auto;
+                        margin-top: 5px;
+                        margin-right: 5px;
+                        margin-bottom: 5px;
+                        margin-left: 5px;
+                        color: white;
+                        background-color: blue;
+                        border: 5px solid red;
+                }
+        #nav {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #home {
+                padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #abc {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        #howto {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #rules {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #r,w {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #l,th {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #f,v {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #syl {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #con {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+        #store {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+                display: flex;
+        }
+        #mrs {
+            padding: 10px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                margin-left: 5px;
+        }
+
+        }
+        #movies {
+        max-width: 100%;
+        margin: 10px;
+        }
